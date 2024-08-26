@@ -1,0 +1,37 @@
+''' operations on strings in python.
+    I don't know that there are this many operations that can be done on stringsitself.
+    there are so many operations like string slicing, upper() method, lower() method, etc.
+    Today I am going to try someof these methods.'''
+# for example let us take a string as an input.
+text = input("Enter the text : ")
+# String indexing. The string is a collection unicode characters in a form of array.
+# We can access the part of the string using thestart and end index.
+#  For example
+print(f"Example for 'String Slicing':\n {text[5:]}")
+# Here I can slice the string from anywhere just by taking the start and end index. This is called "String slicing"
+
+# upper() Statement : The upper() method is used to convert the lower case letters into upper case letters.
+print(f"Example for 'upper() method':\n {text.upper()}")
+
+# lower() Statement : The lower() method statement is just opposite to the upper() statement.
+print(f"Example for 'lower() method':\n{text.lower()}")
+
+# swapcase() Statement : the swapcase() method converts the characters into opposite case. 
+print(f"Example for 'swapcase() method':\n{text.swapcase()}")
+# rstrip() Statement : The rstrip() method reoves any trailing characters in a String.
+print(f"Example for 'rstrip() method':\n{text.rstrip("!")}")
+
+# replace() Statement : The replace() method is used to replace a string with a given value.
+print(f"Example for 'replace() method':\n{text.replace("kumar","Reddy")}")
+
+# capitalize() Statement : This method converts the first character into uppercase and the remaining into the lowercase letters.
+print(f"Example for 'capitalize() method':\n{text.capitalize()}")
+
+# title () statement : This method converts first character of the every word in the string.
+print(f"Example for 'title() method':\n{text.title()}")
+
+# count() Statement : This method returns the number of times the given value has occured in  the string. 
+print(f"Example for 'count() method':\n{text.count("a")}")
+''' There are still many methods that can be performed on strings. 
+    For example endswith(), startswith(), islower(), isupper(), isalnum(), isalpha(), istitle(), isprintable(), isspace(),etc. 
+    These methods checks wether the conditon matches and returns the boolean value as the result.'''
